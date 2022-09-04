@@ -1,0 +1,24 @@
+{
+  "type": "origins:action_over_time",
+  "entity_action": {
+    "type": "origins:apply_effect",
+    "effects": [
+      {
+        "effect": "minecraft:slowness",
+        "duration": 30,
+        "amplifier": 0,
+        "show_particles": false,
+        "show_icon": false
+      },
+      {
+        "effect": "minecraft:weakness",
+        "duration": 30,
+        "amplifier": 0,
+        "show_particles": false,
+        "show_icon": false
+      }
+    ]
+  },
+  "name": "Separation Anxiety",
+  "description": "During the day time you suffer weakness and slowness due to being seperated from the moon."
+}

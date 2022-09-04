@@ -1,0 +1,19 @@
+{
+  "type": "origins:attribute",
+  "modifiers": [
+    {
+      "name": "Speed increase",
+      "attribute": "minecraft:generic.movement_speed",
+      "value": 0.025,
+      "operation": "addition"
+    },
+    {
+      "name": "Max health decrease",
+      "attribute": "minecraft:generic.max_health",
+      "value": -6,
+      "operation": "addition"
+    }
+  ],
+  "name": "Elfish Origins",
+  "description": "Due to being part elf you are able to run faster but are more fragile."
+}

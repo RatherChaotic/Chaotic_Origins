@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "corigins",
+  "version": "${version}",
+
+  "name": "Chaotic's Origins",
+  "description": "A small mod with some simple origins",
+  "authors": [
+    "RatherChaotic"
+  ],
+  "contact": {},
+
+  "license": "MIT",
+  "icon": "assets/corigins/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "chaotic.corigins.client.COriginsClient"
+    ],
+    "main": [
+      "chaotic.corigins.COrigins"
+    ]
+  },
+
+          "mixins": [
+        "COrigins.mixins.json"
+      ],
+
+  "depends": {
+    "fabricloader": ">=0.14.9",
+              "fabric": "*",
+          "minecraft": "1.19"
+  }
+}

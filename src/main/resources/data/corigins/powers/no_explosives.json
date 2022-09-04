@@ -1,0 +1,37 @@
+{
+  "type": "origins:action_when_damage_taken",
+  "entity_action": {
+    "type": "origins:apply_effect",
+    "effects": [
+      {
+        "effect": "minecraft:slowness",
+        "duration": 300,
+        "amplifier": 255,
+        "show_particles": false,
+        "show_icon": false
+      },
+      {
+        "effect": "minecraft:blindness",
+        "duration": 300,
+        "amplifier": 255,
+        "show_particles": false,
+        "show_icon": false
+      },
+      {
+        "effect": "minecraft:weakness",
+        "duration": 300,
+        "amplifier": 255,
+        "show_particles": false,
+        "show_icon": false
+      }
+    ]
+  },
+  "damage_condition": {
+    "type": "origins:explosive"
+  },
+  "cooldown": 300,
+  "hud_render": {
+    "should_render": false
+  },
+  "hidden": true
+}

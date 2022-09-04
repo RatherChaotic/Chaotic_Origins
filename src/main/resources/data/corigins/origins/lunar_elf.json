@@ -1,0 +1,22 @@
+{
+	"powers": [
+		"corigins:lunar_particles",
+		"corigins:lunar_appearance",
+		"corigins:lunar_glow",
+		"corigins:phantom_elytra",
+		"corigins:elfish_size",
+		"corigins:lunar_buff",
+		"corigins:lunar_energy",
+		"corigins:lunar_charge",
+		"corigins:sped_up_flying",
+		"corigins:lunar_overcharge",
+		"corigins:lunar_weakness",
+		"corigins:no_explosives",
+		"corigins:no_fireworks"
+	],
+	"icon": "corigins:moon_icon",
+	"order": 30,
+	"impact": 3,
+	"name": "Lunar Elf",
+	"description": "You are an old elf that has been empowered by the moon. Unfortunately this has somewhat mutated you to more resemble the Moon's crusaders, also known as the \"Phantom\"."
+}

@@ -1,0 +1,11 @@
+{
+  "type": "origins:prevent_item_use",
+  "item_condition": {
+    "type": "origins:ingredient",
+    "ingredient": {
+      "item": "minecraft:firework_rocket"
+    }
+  },
+  "name": "Fear of Explosives",
+  "description": "You get severely stunned when damaged by explosives and are unable to use fireworks."
+}

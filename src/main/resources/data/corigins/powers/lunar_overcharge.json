@@ -1,0 +1,66 @@
+{
+  "type": "origins:multiple",
+  "duration": {
+    "type": "origins:cooldown",
+    "cooldown": 900,
+    "hud_render": {
+      "should_render": false
+    }
+  },
+  "sight": {
+    "type": "origins:entity_glow",
+    "bientity_condition": {
+      "type": "origins:can_see"
+    },
+    "use_teams": false,
+    "red": 1.0,
+    "green": 1.0,
+    "blue": 1.0,
+    "condition": {
+      "type": "origins:resource",
+      "resource": "corigins:lunar_overcharge_duration",
+      "comparison": ">",
+      "compare_to": 0
+    }
+  },
+  "effect": {
+    "type": "origins:active_self",
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:change_resource",
+          "resource": "corigins:lunar_energy",
+          "change": -900
+        },
+        {
+          "type": "origins:apply_effect",
+          "effect": {
+              "effect": "minecraft:strength",
+              "duration": 900,
+              "amplifier": 3
+          }
+        },
+        {
+          "type": "origins:trigger_cooldown",
+          "power": "corigins:lunar_overcharge_duration"
+        }
+      ]
+    },
+    "condition": {
+      "type": "origins:resource",
+      "resource": "corigins:lunar_energy",
+      "comparison": "==",
+      "compare_to": "900"
+    },
+    "cooldown": 20,
+    "hud_render": {
+      "should_render": false
+    },
+    "key": {
+      "key": "key.origins.primary_active"
+    }
+  },
+  "name": "Lunar Warrior",
+  "description": "After 5 minutes (multiplied by 3 for any time flying) during night-time you are able to get significantly stronger and see enemies through walls for 45 seconds."
+}

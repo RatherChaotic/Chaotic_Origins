@@ -1,0 +1,98 @@
+{
+	"type": "origins:multiple",
+	"boost": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:add_velocity",
+					"z": 0.016,
+					"y": 0.004,
+					"space": "local"
+				}
+			]
+		},
+		"interval": 2,
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:fall_flying"
+				},
+				{
+					"type": "origins:resource",
+					"resource": "corigins:lunar_energy",
+					"comparison": ">",
+					"compare_to": "0"
+				}
+			]
+		}
+	},
+	"flapsound": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:chance",
+			"chance": 0.3,
+			"action": {
+				"type": "origins:play_sound",
+				"sound": "entity.phantom.flap",
+				"pitch": 1.3,
+				"volume": 3
+			}
+		},
+		"interval": 17,
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:fall_flying"
+				},
+				{
+					"type": "origins:resource",
+					"resource": "corigins:lunar_energy",
+					"comparison": ">",
+					"compare_to": "0"
+				}
+			]
+		}
+	},
+	"hunger": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:chance",
+					"chance": 0.5,
+					"action": {
+						"type": "origins:exhaust",
+						"amount": 0.4
+					}
+				},
+				{
+					"type": "origins:change_resource",
+					"resource": "corigins:lunar_energy",
+					"change": -1.5
+				}
+			]
+		},
+		"interval": 20,
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:fall_flying"
+				},
+				{
+					"type": "origins:resource",
+					"resource": "corigins:lunar_energy",
+					"comparison": ">",
+					"compare_to": "0"
+				}
+			]
+		}
+	},
+	"name": "Flight",
+	"description": "With a bit of area to fall you are able to fly into the air with your wings (as long as you have lunar energy that is)."
+}

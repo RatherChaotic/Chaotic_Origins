@@ -1,0 +1,30 @@
+{
+  "type": "origins:action_over_time",
+  "hidden": true,
+  "entity_action": {
+    "type": "origins:change_resource",
+    "resource": "corigins:lunar_energy",
+    "change": 3
+  },
+  "rising_action": {
+  "type": "origins:execute_command",
+  "command": "playsound block.beacon.activate player @a[distance=..5] ~ ~ ~ .35 1.5"
+  },
+  "falling_action": {
+  "type": "origins:execute_command",
+  "command": "/playsound block.beacon.activate player @a[distance=..5] ~ ~ ~ .35 1.5"
+  },
+  "interval": 20,
+  "condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:daytime",
+        "inverted": true
+      },
+      {
+        "type": "origins:exposed_to_sky"
+      }
+    ]
+  }
+}

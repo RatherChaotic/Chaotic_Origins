@@ -1,0 +1,6 @@
+{
+  "type": "origins:elytra_flight",
+  "render_elytra": true,
+  "texture_location": "corigins:textures/entity/elytra_model.png",
+  "hidden": true
+}
