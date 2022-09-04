@@ -5,7 +5,7 @@
     "ticks": 1,
     "action": {
       "type": "origins:execute_command",
-      "command": "function template:size"
+      "command": "function corigins:resize"
     }
   },
   "entity_action_lost": {
